@@ -14,7 +14,8 @@ Original file is located at
 # ✅ Step 1: Import Required Libraries
 
 import numpy as np
-import nltk ## Natuar Language Toolkit
+import streamlit as st
+import nltk ## Natural Language Toolkit
 import string
 import random
 from sklearn.feature_extraction.text import TfidfVectorizer
