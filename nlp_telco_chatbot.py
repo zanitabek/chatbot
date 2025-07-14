@@ -80,12 +80,18 @@ def generate_response(user_input):
 
 ## Step 7: Start Chatbot Interaction
 
-user_input = input("You: ").strip()
+# Chatbot UI
+st.title("💬 TeleBot – Telecom Assistant")
+st.write("Ask me something about our telecom services:")
 
+# Text input box for user query
+user_input = st.text_input("You:")
+
+# Response logic
 if user_input:
     if greeting(user_input):
-        print("TeleBot:", greeting(user_input))
+        st.write("TeleBot:", greeting(user_input))
     else:
-        print("TeleBot:", generate_response(user_input))
+        st.write("TeleBot:", generate_response(user_input))
 else:
-    print("TeleBot: Let me know when you're ready with a question!")
+    st.write("TeleBot: Let me know when you're ready with a question!")
